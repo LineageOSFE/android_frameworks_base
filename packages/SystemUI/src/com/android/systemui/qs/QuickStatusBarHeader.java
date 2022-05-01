@@ -341,7 +341,6 @@ public class QuickStatusBarHeader extends FrameLayout implements TunerService.Tu
                 // These views appear on expanding down
                 .addFloat(mDateView, "alpha", 0, 0, 1)
                 .addFloat(mClockDateView, "alpha", 1, 0, 0)
-                .addFloat(mNetworkTraffic, "alpha", 0, 1)
                 // Use statusbar paddings when collapsed,
                 // align with QS when expanded, and animate translation
                 .addFloat(mClockContainer, "translationX",
