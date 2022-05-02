@@ -49,6 +49,8 @@ import com.android.systemui.settings.brightness.BrightnessSliderController;
 import com.android.systemui.tuner.TunerService;
 import com.android.systemui.tuner.TunerService.Tunable;
 
+import lineageos.providers.LineageSettings;
+
 import java.lang.Runnable;
 import java.util.ArrayList;
 import java.util.List;
@@ -57,11 +59,11 @@ import java.util.List;
 public class QSPanel extends LinearLayout implements Tunable {
 
     public static final String QS_SHOW_AUTO_BRIGHTNESS =
-            Settings.Secure.QS_SHOW_AUTO_BRIGHTNESS;
+            "lineagesecure:" + LineageSettings.Secure.QS_SHOW_AUTO_BRIGHTNESS;
     public static final String QS_SHOW_BRIGHTNESS_SLIDER =
-            Settings.Secure.QS_SHOW_BRIGHTNESS_SLIDER;
+            "lineagesecure:" + LineageSettings.Secure.QS_SHOW_BRIGHTNESS_SLIDER;
     public static final String QS_BRIGHTNESS_SLIDER_POSITION =
-            Settings.Secure.QS_BRIGHTNESS_SLIDER_POSITION;
+            "lineagesecure:" + LineageSettings.Secure.QS_BRIGHTNESS_SLIDER_POSITION;
 
     private static final String TAG = "QSPanel";
 
